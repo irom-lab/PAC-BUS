@@ -1,0 +1,7 @@
+.idea/
+data/
+glove/
+text_embedding/
+Weights/
+__pycache__/
+glove.6B/
