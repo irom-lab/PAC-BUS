@@ -1,8 +1,5 @@
 The following instructions are for running the examples seen in "PAC-BUS: Meta-Learning Bounds via PAC-Bayes and Uniform Stability".
 
-*Note that licenses are removed to keep the authors anonymous but will be included in a public release of this code.*
-
-
 # PAC-BUS:
 
 This code uses the following:
