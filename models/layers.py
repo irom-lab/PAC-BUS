@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
 import math
 from loss import KLDiv_gaussian
 
@@ -114,12 +113,12 @@ class StochasticLayer(nn.Module):
     def to_str(self, is_base=True):
         device = torch.device('cpu')
         print("mu", self.mu.data.flatten()[:5].to(device).numpy())
-        return
-        if is_base:
-            print("layer", self.layer.data.flatten()[:5].to(device).numpy())
-        else:
-            print("mu", self.mu.data.flatten()[:5].to(device).numpy())
-            print("logvar", self.logvar.data.flatten()[:5].to(device).numpy())
+        # return
+        # if is_base:
+        #     print("layer", self.layer.data.flatten()[:5].to(device).numpy())
+        # else:
+        #     print("mu", self.mu.data.flatten()[:5].to(device).numpy())
+        #     print("logvar", self.logvar.data.flatten()[:5].to(device).numpy())
 
     def calc_kl_div(self, prior):
         mu1 = self.mu

@@ -7,7 +7,6 @@ import torch
 import argparse
 import warnings
 import learn2learn as l2l
-import time
 import numpy as np
 warnings.filterwarnings("ignore")
 

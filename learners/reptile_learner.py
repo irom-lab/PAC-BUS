@@ -18,7 +18,6 @@ class Learner(nn.Module):
 	For learner class, it will be responsible for update for several steps on meta-train set and return with the loss on
 	meta-test set.
 	"""
-
 	def __init__(self, net_cls, *args):
 		"""
 		It will receive a class: net_cls and its parameters: args for net_cls.

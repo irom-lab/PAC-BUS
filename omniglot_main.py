@@ -6,7 +6,6 @@ import learn2learn as l2l
 from models.omniglot_models import SOmniglotModel, OmniglotModel, OmniglotModel1
 from learners.reptile_learner import ReptileLearner
 
-
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--method', type=str, help="[\'maml\', \'pac_bus_h\', \'mr_maml_w\', \'fli_online\']")
 argparser.add_argument('--nme', help="Whether samples will be not-mutually-exclusive", default='False')
@@ -29,7 +28,6 @@ if args.gpu == -1:
     device = torch.device('cpu')
 else:
     device = torch.device('cuda:'+str(args.gpu))
-
 
 nme = args.nme != 'False'
 method = args.method
