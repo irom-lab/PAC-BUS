@@ -97,21 +97,23 @@ for step in range(1, args.epochsm+1):
 
             pred_q = torch.nn.functional.softmax(learners[i](x_qry[i]), dim=1).argmax(dim=1)
             score += torch.eq(pred_q, y_qry[i]).sum().item() / len(y_qry[0, :])
-            # loss = criterion(learners[i](x_qry[i]), y_qry[i])
-            if method == 'pac_bus_h':
-                kl_div = learners[i].calc_kl_div(prior, device)
-                reg1 = torch.sqrt(kl_div + (torch.log(2*torch.sqrt(T) / delta)) / (2 * T))
-                L, S = learners[i].calc_ls_constants(device)
-                p1 = (1 + 1 / S*c) / (m - 1)
-                p2 = (2 * c * L**2) ** (1 / (S*c + 1))
-                p3 = T**(S*c / (S*c + 1))
-                reg2 = p1 * p2 * p3
-                meta_error += reg1_scale*reg1 + reg2_scale*reg2
-            if method == 'mr_maml_w':
-                kl_div = learners[i].calc_kl_div(prior, device)
-                meta_error += reg1_scale*kl_div  # equation 5 from MLWM paper
 
             meta_error += criterion(learners[i](x_qry[i]), y_qry[i])
+
+        if method == 'pac_bus_h':
+            kl_div = model.calc_kl_div(prior, device)
+            reg1 = torch.sqrt(kl_div + (torch.log(2*torch.sqrt(T) / delta)) / (2 * T))
+            avg_model = model.clone()
+            avg_model.init_as_base()
+            L, S = avg_model.calc_ls_constants(device)
+            p1 = (1 + 1 / S*c) / (m - 1)
+            p2 = (2 * c * L**2) ** (1 / (S*c + 1))
+            p3 = T**(S*c / (S*c + 1))
+            reg2 = p1 * p2 * p3
+            meta_error += reg1_scale*reg1*num_tasks + reg2_scale*reg2*num_tasks
+        if method == 'mr_maml_w':
+            kl_div = model.calc_kl_div(prior, device)
+            meta_error += reg1_scale*kl_div*num_tasks  # equation 5 from MLWM paper
 
         meta_error /= num_tasks
         meta_error.backward(retain_graph=True)
