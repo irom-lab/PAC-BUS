@@ -13,8 +13,8 @@ This code uses the following:
 
 If you are using Anaconda, you can run the following commands to install all of the necessary packages. 
 ```
-conda create -n pacmaml
-conda activate pacmaml 
+conda create -n pacbus
+conda activate pacbus
 conda install pytorch=1.4.0 -c pytorch
 pip install learn2learn cvxpy Mosek sklearn h5py
 ```
