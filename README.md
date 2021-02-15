@@ -74,5 +74,5 @@ Mikhail Khodak,  Maria-Florina Balcan,  and Ameet Tal-walkar.  Provable Guarante
 
 Liangqu Long 2018. MAML-Pytorch Implementation. Github|https://github.com/dragen1860/MAML-Pytorch
 
-Liangqu Long 2018. MAML-Pytorch Implementation. Github|https://github.com/dragen1860/Reptile-Pytorch
+Liangqu Long 2018. Reptile-Pytorch Implementation. Github|https://github.com/dragen1860/Reptile-Pytorch
 
