@@ -10,8 +10,8 @@ class OmniglotModel(BoundedStochasticModel):
     def __init__(self, n_way, n_filt=64, linear=Linear, conv=Conv2d, activation=nn.ReLU):
         super().__init__(radius=None)
         self.names = ('conv1', 'conv2', 'conv3', 'conv4', 'fc_out')
-        self.conv1 = Conv2d((n_filt, 1, 3, 3), 2, 1)
-        self.conv2 = Conv2d((n_filt, n_filt, 3, 3), 2, 1)
+        self.conv1 = conv((n_filt, 1, 3, 3), 2, 1)
+        self.conv2 = conv((n_filt, n_filt, 3, 3), 2, 1)
         self.conv3 = conv((n_filt, n_filt, 3, 3), 1, 0)
         self.conv4 = conv((n_filt, n_filt, 3, 3), 1, 0)
         self.relu = activation(inplace=True)
