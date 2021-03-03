@@ -5,7 +5,6 @@ from models.layers import NotStochasticLinear as Linear
 from models.layers import NotStochasticConv2d as Conv2d
 from models.layers import BoundedStochasticModel
 
-
 class OmniglotModel(BoundedStochasticModel):
     def __init__(self, n_way, n_filt=64, linear=Linear, conv=Conv2d, activation=nn.ReLU):
         super().__init__(radius=None)
@@ -27,7 +26,6 @@ class OmniglotModel(BoundedStochasticModel):
         x = self.fc_out(x)
         return x
 
-
 class SOmniglotModel(OmniglotModel):
     def __init__(self, n_way, n_filt=64, ELU=False):
         if ELU:
@@ -35,7 +33,6 @@ class SOmniglotModel(OmniglotModel):
         else:
             activation = nn.ELU
         super().__init__(n_way, n_filt=n_filt, linear=SLinear, conv=SConv2d, activation=activation)
-
 
 class OmniglotModel1(nn.Module):
     def __init__(self, n_way, n_filt=64):
