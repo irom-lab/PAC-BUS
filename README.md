@@ -73,12 +73,14 @@ Sebastien Arnold, Praateek Mahajan, Debajyoti Datta, Ian Bunner, and Konstantino
 
 Steven Diamond and Stephen Boyd. CVXPY: A Python-embedded modeling language for convex optimization. *Journal of Machine Learning Research* 17 pp1--5, 2016.
 
-Mikhail Khodak,  Maria-Florina Balcan,  and Ameet Tal-walkar.  Provable Guarantees for Gradient-Based Meta-Learning. *Proceedings of the 36th International Confer-ence on Machine Learning*, 2019.
+Mikhail Khodak, Maria-Florina Balcan, and Ameet Tal-walkar.  Provable Guarantees for Gradient-Based Meta-Learning. *Proceedings of the 36th International Confer-ence on Machine Learning*, 2019.
 
 Liangqu Long 2018. MAML-Pytorch Implementation. Github|https://github.com/dragen1860/MAML-Pytorch
 
 Liangqu Long 2018. Reptile-Pytorch Implementation. Github|https://github.com/dragen1860/Reptile-Pytorch
 
+MOSEK ApS. Mosek fusion api for python 9.0.105, 2019. URL|https://docs.mosek.com/9.0/pythonfusion/index.html
+
 Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. PyTorch: An Imperative Style, High-Performance Deep Learning Library. *Advances in Neural Information Processing Systems 32*, 2019.
 
-MOSEK ApS. Mosek fusion api for python 9.0.105, 2019. URL|https://docs.mosek.com/9.0/pythonfusion/index.html
+F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay. Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research* 12, pp2825--2830 2011.
