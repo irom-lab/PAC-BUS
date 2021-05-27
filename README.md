@@ -69,10 +69,10 @@ python omniglot_main.py --method pac_bus_h  --k_spt 5 --k_qry 5 --batch 16 --nme
 ### References
 Sebastien Arnold, Praateek Mahajan, Debajyoti Datta, Ian Bunner, and Konstantinos Saitas Zarkias. learn2learn: A Library for Meta-Learning Research. *arXiv preprint arXiv:2008.12284*, 2020.
 
-
 Mikhail Khodak,  Maria-Florina Balcan,  and Ameet Tal-walkar.  Provable Guarantees for Gradient-Based Meta-Learning. *Proceedings of the 36th International Confer-ence on Machine Learning*, 2019.
 
 Liangqu Long 2018. MAML-Pytorch Implementation. Github|https://github.com/dragen1860/MAML-Pytorch
 
 Liangqu Long 2018. Reptile-Pytorch Implementation. Github|https://github.com/dragen1860/Reptile-Pytorch
 
+MOSEK ApS. Mosek fusion api for python 9.0.105, 2019. URL|https://docs.mosek.com/9.0/pythonfusion/index.html
