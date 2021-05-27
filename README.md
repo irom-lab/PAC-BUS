@@ -67,7 +67,11 @@ python omniglot_main.py --method pac_bus_h  --k_spt 1 --k_qry 4 --batch 16 --nme
 python omniglot_main.py --method pac_bus_h  --k_spt 5 --k_qry 5 --batch 16 --nme True --epochsm 100000 --lrm 0.001 --lrb 0.5 --regscale 1e-4 --regscale2 10.0 --seed 1
 ```
 ### References
+Akshay Agrawal, Robin Verschueren, Steven Diamond,and Stephen Boyd. A rewriting system for convex optimization problems. *Journal of Control and Decision* 5 pp42--60, 2018.
+
 Sebastien Arnold, Praateek Mahajan, Debajyoti Datta, Ian Bunner, and Konstantinos Saitas Zarkias. learn2learn: A Library for Meta-Learning Research. *arXiv preprint arXiv:2008.12284*, 2020.
+
+Steven Diamond and Stephen Boyd. CVXPY: A Python-embedded modeling language for convex optimization. *Journal of Machine Learning Research* 17 pp1--5, 2016.
 
 Mikhail Khodak,  Maria-Florina Balcan,  and Ameet Tal-walkar.  Provable Guarantees for Gradient-Based Meta-Learning. *Proceedings of the 36th International Confer-ence on Machine Learning*, 2019.
 
