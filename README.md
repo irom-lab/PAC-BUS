@@ -81,6 +81,8 @@ Liangqu Long 2018. Reptile-Pytorch Implementation. Github|https://github.com/dra
 
 MOSEK ApS. Mosek fusion api for python 9.0.105, 2019. URL|https://docs.mosek.com/9.0/pythonfusion/index.html
 
+Andrew Collette. *Python and HDF5.* O’Reilly, 2013
+
 Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. PyTorch: An Imperative Style, High-Performance Deep Learning Library. *Advances in Neural Information Processing Systems 32*, 2019.
 
 F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher, M. Perrot, and E. Duchesnay. Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research* 12, pp2825--2830 2011.
