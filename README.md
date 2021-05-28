@@ -21,8 +21,7 @@ pip install learn2learn cvxpy Mosek sklearn h5py
 
 ### Circle Classification Example: 
 Run the following to produce the results from Example 1 in the paper. Note that `--num_val` denotes the number of times we run the resulting
-policy on test data. We require a large number of evaluations to produce a tight upper bound (see the end of Section 
-4.3 for more information). For testing purposes, you may want to reduce `--num_val` so the program takes less time to finish. 
+policy on test data. We require a large number of evaluations to produce a tight upper bound (see Appendix A.4 for more information). For testing purposes, you may want to reduce `--num_val` so the program takes less time to finish. 
 
 ```
 python circleclass_main.py --method maml    --prior train --trials full --verbose True 
