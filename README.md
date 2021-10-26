@@ -1,4 +1,4 @@
-The following instructions are for running the examples seen in "PAC-BUS: Meta-Learning Bounds via PAC-Bayes and Uniform Stability".
+The following instructions are for running the examples seen in "Generalization Bounds for Meta-Learning via PAC-Bayes and Uniform Stability".
 
 # PAC-BUS:
 
